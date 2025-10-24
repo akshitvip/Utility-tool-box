@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>[APP_NAME] — Official App Page</title>
+  <meta name="description" content="[Utility Tool Box] — Official page. Download from Indus Appstore. Features, privacy policy, and contact information.">
+  <meta name="author" content="[Akshit Negi]">
+  <link rel="icon" href="favicon.png">
+  <style>
+    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans',Arial;color:#111}
+    body{margin:0;background:#f7f8fb;color:#111}
+    header{background:linear-gradient(90deg,#0066ff,#00c6ff);color:#fff;padding:36px 16px;text-align:center}
+    .container{max-width:960px;margin:24px auto;padding:0 16px}
+    h1{margin:8px 0;font-size:28px}
+    p.lead{margin:8px 0 18px;font-size:16px;line-height:1.5;color:#102}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:#ff7800;color:#fff}
+    .card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 6px 18px rgba(12,20,40,0.06);margin-bottom:16px}
+    .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .screenshot{width:100%;height:200px;background:#eef;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#889;font-weight:600}
+    footer{padding:18px;text-align:center;color:#666;font-size:14px}
+    ul.features{padding-left:1.05rem}
+    .meta{font-size:13px;color:#445}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    @media(min-width:720px){h1{font-size:34px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>[Utility Tool Box]</h1>
+      <p class="lead">[Utility Tool Box ] — A simple and powerful app that helps users [short description]. Click below to download the app.</p>
+      <a class="btn btn-primary" href="[INDUS_APPSTORE_LINK]" target="_blank" rel="noopener">Download from Indus Appstore</a>
+    </div>
+  </header>  <main class="container">
+    <section class="card">
+      <h2>About the App</h2>
+      <p class="meta">App Name: <strong>[APP_NAME]</strong> &nbsp; • &nbsp; Developer: <strong>[Akshit Negi]</strong></p>
+      <p>Provide a detailed description of your app — what it does, who it’s for, and its key features. For example: “[Utility Tool Box] allows users to do X, Y, and Z efficiently. It’s lightweight, fast, and secure.”</p>
+    </section><section class="card">
+  <h2>Main Features</h2>
+  <ul class="features">
+    <li>Feature 1 — short explanation</li>
+    <li>Feature 2 — short explanation</li>
+    <li>Feature 3 — any special functionality</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Screenshots</h2>
+  <div class="grid">
+    <div class="screenshot">Screenshot 1 (replace with &lt;img src="screenshots/shot1.png"&gt;)</div>
+    <div class="screenshot">Screenshot 2 (replace)</div>
+    <div class="screenshot">Screenshot 3 (replace)</div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Permissions & Requirements</h2>
+  <p>List the permissions the app requests (e.g., Camera, Location, Internet) and mention the minimum Android version (e.g., Android 6.0+).</p>
+</section>
+
+<section class="card">
+  <h2>Privacy Policy</h2>
+  <p>Link your Privacy Policy here — use the same link you submitted on the Indus Appstore dashboard:</p>
+  <p><a href="[https://sites.google.com/view/utilitytoolboxprivacypolicy/home]" target="_blank" rel="noopener">View Privacy Policy</a></p>
+  <p>Ensure that the privacy policy link is public and accessible without login.</p>
+</section>
+
+<section class="card">
+  <h2>Contact</h2>
+  <p>If Indus Appstore or users need to reach you, they can contact:</p>
+  <p class="meta"><strong>[negiakshit212@gmail.com]</strong></p>
+  <p>Developer: <strong>[Akshit Negi]</strong></p>
+</section>
+
+<section class="card">
+  <h2>Changelog</h2>
+  <ul>
+    <li>v1.0 — Initial release</li>
+    <li>v1.1 — Bug fixes and improvements</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Hosting Instructions</h2>
+  <p>Quick method: Use <strong>GitHub Pages</strong> or <strong>Netlify</strong>. Simply upload this <code>index.html</code> file and use the public URL in the Indus Appstore dashboard’s Website field.</p>
+</section>
+
+  </main>  <footer>
+    © <span id="year"></span> <strong>[DEVELOPER_NAME]</strong> — <em>[APP_NAME]</em> · <a href="[INDUS_APPSTORE_LINK]" target="_blank">Indus Appstore</a>
+  </footer>  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script></body>
+</html>
