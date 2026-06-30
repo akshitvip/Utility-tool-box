@@ -1,97 +1,204 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>[APP_NAME] — Official App Page</title>
-  <meta name="description" content="[Utility Tool Box] — Official page. Download from Indus Appstore. Features, privacy policy, and contact information.">
-  <meta name="author" content="[Akshit Negi]">
-  <link rel="icon" href="favicon.png">
-  <style>
-    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans',Arial;color:#111}
-    body{margin:0;background:#f7f8fb;color:#111}
-    header{background:linear-gradient(90deg,#0066ff,#00c6ff);color:#fff;padding:36px 16px;text-align:center}
-    .container{max-width:960px;margin:24px auto;padding:0 16px}
-    h1{margin:8px 0;font-size:28px}
-    p.lead{margin:8px 0 18px;font-size:16px;line-height:1.5;color:#102}
-    .btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600}
-    .btn-primary{background:#ff7800;color:#fff}
-    .card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 6px 18px rgba(12,20,40,0.06);margin-bottom:16px}
-    .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-    .screenshot{width:100%;height:200px;background:#eef;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#889;font-weight:600}
-    footer{padding:18px;text-align:center;color:#666;font-size:14px}
-    ul.features{padding-left:1.05rem}
-    .meta{font-size:13px;color:#445}
-    .row{display:flex;gap:12px;flex-wrap:wrap}
-    @media(min-width:720px){h1{font-size:34px}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Utility Tool Box</title>
+    <style>
+        :root {
+            --neon-green: #00ff00;
+            --dark-bg: #0a0a0a;
+            --terminal-gray: #1a1a1a;
+            --cyan-glow: #00ffff;
+        }
+        
+        body {
+            background-color: var(--dark-bg);
+            color: var(--neon-green);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .terminal-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--terminal-gray);
+            border: 1px solid var(--neon-green);
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+            padding: 30px;
+            position: relative;
+        }
+
+        .terminal-header {
+            border-bottom: 1px dashed var(--neon-green);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1, h2, h3 {
+            color: var(--cyan-glow);
+            text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+            margin-top: 30px;
+        }
+
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.4em; border-left: 4px solid var(--cyan-glow); padding-left: 10px; }
+
+        p, li { font-size: 1.1em; color: #b3ffb3; }
+
+        /* Hacker Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(0, 255, 0, 0.05);
+        }
+
+        th, td {
+            border: 1px solid var(--neon-green);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgba(0, 255, 0, 0.2);
+            color: var(--cyan-glow);
+            font-weight: bold;
+        }
+
+        .highlight {
+            color: #fff;
+            background-color: var(--neon-green);
+            padding: 2px 5px;
+            color: black;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.2em;
+            background-color: var(--neon-green);
+            animation: blink 1s step-end infinite;
+            vertical-align: bottom;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .footer {
+            margin-top: 40px;
+            border-top: 1px dashed var(--neon-green);
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        a { color: var(--cyan-glow); text-decoration: none; }
+        a:hover { text-shadow: 0 0 8px var(--cyan-glow); }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>[Utility Tool Box]</h1>
-      <p class="lead">[Utility Tool Box ] — A simple and powerful app that helps users [short description]. Click below to download the app.</p>
-      <a class="btn btn-primary" href="[INDUS_APPSTORE_LINK]" target="_blank" rel="noopener">Download from Indus Appstore</a>
+
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <span style="color: #666;">root@akshit-negi:~$</span> ./show_privacy_policy.sh
+        </div>
+
+        <h1 id="typewriter"></h1>
+
+        <p>Welcome to <strong>Utility Tool Box</strong>, developed by <span class="highlight">Akshit Negi</span>. This Privacy Policy explains how we handle user data and permissions within the app.</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>Our app does not collect, store, or share any personal information with third parties. However, the app requests certain permissions for its features to function properly:</p>
+        
+        <table>
+            <tr>
+                <th>Permission</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>Internet Access</td>
+                <td>Used for displaying ads and updating app content.</td>
+            </tr>
+            <tr>
+                <td>Microphone</td>
+                <td>Used only to test microphone functionality within the app. No audio is stored or shared.</td>
+            </tr>
+            <tr>
+                <td>Camera</td>
+                <td>Required for scanning QR codes.</td>
+            </tr>
+            <tr>
+                <td>Storage</td>
+                <td>Used for saving compressed images, generated QR codes, ZIP files, and related outputs.</td>
+            </tr>
+            <tr>
+                <td>Location (Approximate)</td>
+                <td>Used for detecting nearby devices for Wi-Fi Direct sharing.</td>
+            </tr>
+            <tr>
+                <td>Phone (Call Permission)</td>
+                <td>Allows calling the emergency contact numbers provided by the user. No calls are made automatically.</td>
+            </tr>
+        </table>
+
+        <h2>2. App Features</h2>
+        <p>The Utility Tool Box app includes the following tools operating locally on your device:</p>
+        <ul>
+            <li>ZIP File Creator & Extractor</li>
+            <li>Unit Converter & Age Calculator</li>
+            <li>Compass & Mobile Info Viewer</li>
+            <li>QR Code Generator, Scanner & UPI QR Generator</li>
+            <li>Notes, Notepad, Stopwatch & Calculator</li>
+            <li>Image Compressor and Image Tools</li>
+            <li>Emergency Dial Feature & Wi-Fi Direct Nearby Sharing</li>
+            <li>Password Generator</li>
+        </ul>
+        <p><em>Note: Each tool operates locally on your device and does not send any data to external servers.</em></p>
+
+        <h2>3. Children’s Privacy</h2>
+        <p>This app is designed for users aged 13 years and above. We do not knowingly collect any personal information from children under 13.</p>
+
+        <h2>4. Data Security</h2>
+        <p>We value your trust. Your data stays completely on your device. No data is shared with any external database, and the app is 100% safe and secure.</p>
+
+        <h2>5. Advertising</h2>
+        <p>The app may display ads from third-party ad networks. These networks may use cookies to personalize ad content, but Utility Tool Box itself does not store or use this data.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, feel free to contact:<br>
+        📧 <a href="mailto:negiakshit212@gmail.com">negiakshit212@gmail.com</a></p>
+
+        <div class="footer">
+            <p><strong>Developer Name:</strong> Akshit Negi | <strong>App Name:</strong> Utility Tool Box | <strong>Country:</strong> India</p>
+            <p style="color: #666;">System Status: Secure [OK]</p>
+        </div>
     </div>
-  </header>  <main class="container">
-    <section class="card">
-      <h2>About the App</h2>
-      <p class="meta">App Name: <strong>[APP_NAME]</strong> &nbsp; • &nbsp; Developer: <strong>[Akshit Negi]</strong></p>
-      <p>Provide a detailed description of your app — what it does, who it’s for, and its key features. For example: “[Utility Tool Box] allows users to do X, Y, and Z efficiently. It’s lightweight, fast, and secure.”</p>
-    </section><section class="card">
-  <h2>Main Features</h2>
-  <ul class="features">
-    <li>Feature 1 — short explanation</li>
-    <li>Feature 2 — short explanation</li>
-    <li>Feature 3 — any special functionality</li>
-  </ul>
-</section>
 
-<section class="card">
-  <h2>Screenshots</h2>
-  <div class="grid">
-    <div class="screenshot">Screenshot 1 (replace with &lt;img src="screenshots/shot1.png"&gt;)</div>
-    <div class="screenshot">Screenshot 2 (replace)</div>
-    <div class="screenshot">Screenshot 3 (replace)</div>
-  </div>
-</section>
-
-<section class="card">
-  <h2>Permissions & Requirements</h2>
-  <p>List the permissions the app requests (e.g., Camera, Location, Internet) and mention the minimum Android version (e.g., Android 6.0+).</p>
-</section>
-
-<section class="card">
-  <h2>Privacy Policy</h2>
-  <p>Link your Privacy Policy here — use the same link you submitted on the Indus Appstore dashboard:</p>
-  <p><a href="[https://sites.google.com/view/utilitytoolboxprivacypolicy/home]" target="_blank" rel="noopener">View Privacy Policy</a></p>
-  <p>Ensure that the privacy policy link is public and accessible without login.</p>
-</section>
-
-<section class="card">
-  <h2>Contact</h2>
-  <p>If Indus Appstore or users need to reach you, they can contact:</p>
-  <p class="meta"><strong>[negiakshit212@gmail.com]</strong></p>
-  <p>Developer: <strong>[Akshit Negi]</strong></p>
-</section>
-
-<section class="card">
-  <h2>Changelog</h2>
-  <ul>
-    <li>v1.0 — Initial release</li>
-    <li>v1.1 — Bug fixes and improvements</li>
-  </ul>
-</section>
-
-<section class="card">
-  <h2>Hosting Instructions</h2>
-  <p>Quick method: Use <strong>GitHub Pages</strong> or <strong>Netlify</strong>. Simply upload this <code>index.html</code> file and use the public URL in the Indus Appstore dashboard’s Website field.</p>
-</section>
-
-  </main>  <footer>
-    © <span id="year"></span> <strong>[DEVELOPER_NAME]</strong> — <em>[APP_NAME]</em> · <a href="[INDUS_APPSTORE_LINK]" target="_blank">Indus Appstore</a>
-  </footer>  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script></body>
+    <script>
+        // Typing effect for the main heading
+        const text = "Privacy Policy _ Utility Tool Box";
+        let i = 0;
+        const speed = 100;
+        
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("typewriter").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            } else {
+                document.getElementById("typewriter").innerHTML += '<span class="cursor"></span>';
+            }
+        }
+        
+        // Start typing effect when page loads
+        window.onload = typeWriter;
+    </script>
+</body>
 </html>
